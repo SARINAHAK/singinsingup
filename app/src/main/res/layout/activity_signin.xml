@@ -74,32 +74,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="100dp">
+        android:padding="90dp">
 
 
         <ImageView
             android:id="@+id/googleIcon"
-            android:layout_width="40dp"
+            android:layout_width="60dp"
             android:layout_height="40dp"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/google"/>
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/google" />
 
 
         <ImageView
             android:id="@+id/facebookIcon"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/Facebook"/>
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/Facebook" />
 
 
         <ImageView
             android:id="@+id/xIcon"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/xt"/>
+            android:src="@drawable/xt" />
     </LinearLayout>
 
 </RelativeLayout>

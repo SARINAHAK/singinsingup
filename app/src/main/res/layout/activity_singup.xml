@@ -11,7 +11,7 @@
     android:background="@drawable/background"
     tools:context=".MainActivity">
 
-    <!-- Judul -->
+
     <TextView
         android:id="@+id/signup"
         android:layout_width="wrap_content"
@@ -23,7 +23,7 @@
         android:gravity="center"
         android:layout_marginBottom="90dp"/>
 
-    <!-- EditText dengan Ikon -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -134,7 +134,7 @@
             android:padding="10dp"/>
     </LinearLayout>
 
-    <!-- Tombol Register -->
+
     <Button
         android:id="@+id/registerbtn"
         android:layout_width="match_parent"
@@ -152,7 +152,7 @@
         android:gravity="center"
         android:layout_marginTop="20dp">
 
-        <!-- Footer Social Media -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -161,24 +161,22 @@
             android:layout_marginTop="30dp"
             android:padding="10dp">
 
-            <!-- Facebook -->
 
-            <!-- Instagram -->
             <ImageView
                 android:id="@+id/facebookIcon"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginEnd="15dp"
+                android:layout_marginEnd="50dp"
                 android:src="@drawable/Facebook" />
 
             <ImageView
                 android:id="@+id/googleIcon"
-                android:layout_width="40dp"
+                android:layout_width="60dp"
                 android:layout_height="40dp"
                 android:src="@drawable/google"
-                android:layout_marginEnd="15dp"/>
+                android:layout_marginEnd="50dp"/>
 
-            <!-- X (Twitter) -->
+
             <ImageView
                 android:id="@+id/xIcon"
                 android:layout_width="40dp"
