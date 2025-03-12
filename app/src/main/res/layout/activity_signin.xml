@@ -6,87 +6,100 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".MainActivity"
-    >
+    tools:context=".MainActivity">
+
 
     <TextView
+        android:id="@+id/signin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/signin"
+        android:gravity="center"
         android:text="Sign In"
         android:textColor="@color/white"
         android:textSize="35dp"
         android:textStyle="bold"
-        android:layout_margin="50dp"
-        android:gravity="center"/>
+        android:padding="50dp"
+        android:layout_marginBottom="50dp"/>
 
     <EditText
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/username"
         android:layout_below="@id/signin"
         android:background="#30ffffff"
         android:hint="Username"
         android:textColorHint="@color/white"
         android:textColor="@color/white"
         android:layout_margin="10dp"
-        android:padding="20dp"
-        android:drawableLeft="@color/white"
-        android:drawablePadding="20dp"
-        tools:ignore="HardCodedText" />
+        android:padding="15dp"/>
+
 
     <EditText
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/password"
         android:layout_below="@id/username"
         android:background="#30ffffff"
         android:hint="Password"
         android:textColorHint="@color/white"
         android:textColor="@color/white"
         android:layout_margin="10dp"
-        android:padding="20dp"
-        android:drawableLeft="@color/white"
-        android:drawablePadding="20dp"
-        android:inputType="textPassword" />
+        android:padding="15dp"
+        android:inputType="textPassword"/>
+
 
     <Button
+        android:id="@+id/loginbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/loginbtn"
         android:layout_below="@id/password"
-        android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
         android:backgroundTint="@color/white"
-        android:text="LOGIN" />
-
-
+        android:text="LOGIN"/>
 
 
     <TextView
+        android:id="@+id/forgotpss"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/forgotpss"
         android:layout_below="@id/loginbtn"
-        android:text="Forgot Password"
+        android:text="Forgot Password?"
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
-        android:layout_margin="20dp"/>
+        android:layout_marginTop="10dp"/>
+
 
     <LinearLayout
+        android:id="@+id/footer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/socialicons"
         android:layout_alignParentBottom="true"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="100dp">
+
 
         <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_margin="20dp"
-            android:src="@drawable/google"
-            />
+            android:id="@+id/googleIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/google"/>
 
+
+        <ImageView
+            android:id="@+id/facebookIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/Facebook"/>
+
+
+        <ImageView
+            android:id="@+id/xIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/xt"/>
     </LinearLayout>
 
 </RelativeLayout>
